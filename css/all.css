@@ -5745,6 +5745,18 @@ a:hover {
   color: #429FDE;
 }
 
+.bg-grayLight {
+  background-color: #F5F5F5;
+}
+
+.bg-gray {
+  background-color: #DDDDDD;
+}
+
+.bg-dark {
+  background-color: #333333;
+}
+
 .text-truncate-2 {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -6857,137 +6869,22 @@ body.header-fixed header {
 }
 
 /*首頁-新聞列表*/
-.news-list ul {
-  padding: 0;
-  margin: 0;
+.news-list a.news-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 6px;
 }
 
-.news-list li {
-  list-style: none;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.news-list li:first-child {
-  border-top: none;
-}
-
-.news-list a.news-list-item {
-  color: #333333;
-  border-radius: 4px;
-  display: block;
-  padding: 0.5rem;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-}
-
-@media (max-width: 767.98px) {
-  .news-list a.news-list-item {
-    font-size: 0.875rem;
-  }
-}
-
-.news-list a.news-list-item:hover {
-  color: #333333;
-  text-decoration: none;
+.news-list a.news-item:hover {
   background-color: #f5f5f5;
 }
 
-.news-list a.news-list-item.hvr-grow:hover {
-  background-color: #ffffff;
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02);
-}
-
-.news-list-r {
+.news-list .news-item-title {
   width: calc(100% - 55px);
-}
-
-.news-list-text {
-  font-size: 0.875rem;
-  color: #888888;
-}
-
-/*新聞詳情*/
-.newsDetail .con-block {
-  padding: 0;
-}
-
-.newsDetail-top {
-  background: #f5f5f5;
-  text-align: center;
-  border-top: 3px solid #C92217;
-  padding: 1.875rem 1rem;
-}
-
-@media (max-width: 767.98px) {
-  .newsDetail-top {
-    padding: 1rem;
-  }
-}
-
-.newsDetail-top h3, .newsDetail-top .h3 {
-  font-size: 1.625rem;
-  margin: 0 0 0.75rem 0;
-}
-
-@media (max-width: 767.98px) {
-  .newsDetail-top h3, .newsDetail-top .h3 {
-    font-size: 1.25rem;
-    margin: 0 0 0.625rem 0;
-  }
-}
-
-.newsDetail-top p {
-  font-size: 1.125rem;
-  color: #C92217;
-  margin: 0;
-}
-
-@media (max-width: 767.98px) {
-  .newsDetail-top p {
-    font-size: 0.875rem;
-  }
-}
-
-.newsDetail-content {
-  padding: 2.5rem;
-}
-
-@media (max-width: 767.98px) {
-  .newsDetail-content {
-    padding: 1.25rem 1rem;
-  }
-}
-
-.newsDetail-content img {
-  width: auto;
-  height: auto;
-  max-width: 600px;
-  max-height: 100%;
-  display: block;
-  margin: 1rem auto;
-}
-
-@media (max-width: 767.98px) {
-  .newsDetail-content img {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .newsDetail-content p {
-    font-size: 0.875rem;
-  }
 }
 
 /*遊戲大廳*/

@@ -39,6 +39,11 @@ a {
 .text-danger {color: $danger;}
 .text-info {color: $blue;}
 
+//background
+.bg-grayLight {background-color: $gray-100;}
+.bg-gray {background-color: $gray-300;}
+.bg-dark {background-color: $dark;}
+
 // text-truncate
 @mixin truncate($lines:1) {
     overflow : hidden;
@@ -56,9 +61,6 @@ a {
     margin-bottom: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-
-//background
-
 
 //table表格
 .table-headBg { background-color: $table-headBg;}
