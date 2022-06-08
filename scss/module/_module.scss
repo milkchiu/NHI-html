@@ -6,8 +6,15 @@
     transition: .3s ease-in-out;
 }
 %transition-grow-hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.hvr-grow {
+    @extend %transition-grow;
+    &:hover {
+        @extend %transition-grow-hover;
+    }
 }
 
 //標題
@@ -19,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 767px) {
+    @include media-breakpoint-down(md) {
         min-height: 100px;
         padding: 1.25rem 0;
     }
@@ -44,7 +51,7 @@
         left: 50%;
         margin-left: -40px;
         bottom: 0px;
-        @media (max-width: 767px) {
+        @include media-breakpoint-down(md) {
             position: absolute;
             content: "";
             width: 60px;
@@ -64,7 +71,7 @@
     display: block;
     margin-top: -25px;
     opacity: .15;
-    @media (max-width: 767px) {
+    @include media-breakpoint-down(md) {
         margin-top: -5px;
     }
 }
@@ -78,13 +85,13 @@
         color: $gray-500;
         font-weight: 500;
         margin-left: 5px;
-        @media (max-width: 767px) {
+        @include media-breakpoint-down(md) {
             display: none;
         }
     }
     img {
         vertical-align: bottom;
-        @media (max-width: 767px) {
+        @include media-breakpoint-down(md) {
             height: 30px;
         }
     }
@@ -169,7 +176,7 @@
     opacity: 1;
 }
 
-@media (max-width: 767px) {
+@include media-breakpoint-down(md) {
     .popup-style .modal-header h5 {
         font-size: 1rem;
     }

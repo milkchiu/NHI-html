@@ -2,20 +2,20 @@
     position: relative;
     .con-inpage {
         padding: 1.875rem 0 0 0;
-        @media (max-width:767px) {
+        @include media-breakpoint-down(md) {
             padding: 1rem 0 0 0;
         }
     }
     .tabs-style02 + .tab-content {
         padding: 1.875rem 0 0 0;
-        @media (max-width:767px) {
+        @include media-breakpoint-down(md) {
             padding: 1.25rem 0 0 0;
         }
     }
     .img-foil01,.img-foil02 {
         position: absolute;
         z-index: 2;
-        @media (max-width:767px) {
+        @include media-breakpoint-down(md) {
             display: none;
         }
     }
@@ -59,7 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width:767px) {
+    @include media-breakpoint-down(md) {
         padding: 1.25rem 1rem;
     }
     span {
@@ -78,7 +78,7 @@
             transform: translateY(-8px);
         }
         img {
-            @media (max-width:767px) {
+            @include media-breakpoint-down(md) {
                 width: 40px;
             }
         }
