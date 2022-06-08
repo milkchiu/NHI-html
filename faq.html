@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>金蘋果遊戲平台</title>
+
+    <!--bootstrap
+    <link href="css/bootstrap.css" rel="stylesheet">-->
+
+    <!-- 輪播樣式-Owl Stylesheets -->
+    <link href="css/rd/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/rd/owl.theme.default.min.css" rel="stylesheet">
+
+    <!--style-->
+    <link href="css/all.css" rel="stylesheet">
+
+    <!--日期套件-->
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css">        
+
+</head>
+
+<body>
+    <header id="topnav" class="header">
+        <a href="index.html" class="header-logo mr-md-auto"><img src="images/header/logo.svg"></a>
+        <div class="ml-auto">
+            <a class="header_navIcon" onclick="toggle('#navWrap')"><img src="images/header/icon_menu.svg"></a>
+
+            <nav id="navWrap" class="header_nav navWrap">
+                <div class="mask" onclick="toggle('#navWrap')"></div>
+                <div class="cont">
+                    <div class="nav-login-block">
+                        <div class="container justify-content-between">
+                            <div class="d-lg-flex order-2">
+                                <div class="row gx-2">
+                                    <div class="col-6 d-grid">
+                                        <button type="button" class="btn btn-outline-warning" onclick="window.location.href='login.html';">會員登入</button>
+                                    </div>
+                                    <div class="col-6 d-grid">
+                                        <button type="button" class="btn btn-warning">玩家註冊</button>
+                                    </div>
+                                </div>
+                                <div class="info-login">
+                                    <h3>陳大天，您好!</h3>
+                                    <p class="info-login-text01">
+                                        <span>ID：</span>
+                                        <span class="info-amount">53627320</span>
+                                    </p>
+                                    <p class="info-login-text02">
+                                        <span>點數：</span>
+                                        <span class="info-amount">2,000</span>
+                                    </p>
+                                    <div class="d-grid col-lg-2">
+                                        <button type="button" class="btn btn-outline-warning">登出</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lang-block">語言設置：<a href="#" class="tw active">繁</a>/<a href="#" class="cn">简</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-box container">
+                        <ul class="nav justify-content-end">
+                            <!--menu-->
+                            <li class="nav-item"><a class="nav-link" href="index.html"><span><img src="images/common_icon/icon_navlist.svg"></span>網站首頁</a></li>
+                            <li class="nav-item"><a class="nav-link" href="game-list.html"><span><img src="images/common_icon/icon_navlist.svg"></span>遊戲大廳</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay.html"><span><img src="images/common_icon/icon_navlist.svg"></span>儲值專區</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="faq.html"><span><img src="images/common_icon/icon_navlist.svg"></span>客服中心</a></li>
+                            <li class="nav-item"><a class="nav-link" href="member.html"><span><img src="images/common_icon/icon_navlist.svg"></span>會員中心</a></li>
+                            <li class="nav-item"><a class="nav-link" href="news-list.html"><span><img src="images/common_icon/icon_navlist.svg"></span>公告列表</a></li>
+                        </ul>
+                    </div>
+                    <!--/menu-->
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="wrap">
+        <div class="headline-section bg-faq">
+            <h2 class="headline">
+                <span class="headline-title">客服中心</span>
+                <span class="headline-small">FAQ SERVICE</span>
+            </h2>
+        </div>
+        <div class="container inPage">
+            <div class="row">
+                <div class="col-md-3 pe-lg-0">
+                    <div class="left-submenu">
+                        <div class="row">
+                            <div class="col-md-12 col-6">
+                                <a href="faq.html" class="active">我要提問</a>
+                            </div>
+                            <div class="col-md-12 col-6">
+                                <a href="faq-record.html">客服紀錄</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 ps-lg-0">
+                    <div class="con-block rounded shadow p-lg-5 p-3">
+                        <h2 class="subtitle-style02 mb-lg-5 mb-3">我要提問</h2>
+                        <!--我要提問-->
+                        <div class="row">
+                            <div class="col-md-8 col-12 m-auto">
+                                <form class="con-form">
+                                    <div class="alert alert-danger text-danger mb-3" role="alert">以下資訊，請儘量保持完整，以便我們能夠為您迅速解決問題</div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label">問題類型</label>
+                                        <div class="col-md-9">
+                                            <select class="form-select">
+                                                <option>平台相關</option>
+                                                <option>遊戲相關</option>
+                                                <option>儲值問題</option>
+                                                <option>兌幣問題</option>
+                                                <option>其他問題</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label">標題</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="nickName" placeholder="請輸入欲詢問的標題">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label">問題截圖</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="file" id="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label">問題敘述</label>
+                                        <div class="col-md-9">
+                                            <textarea class="form-control" id="" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <button class="col-lg-6 col-6 btn btn-danger rounded-pill" type="submit">確認提交</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/我要提問-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <!--footer-->
+        <div class="container text-center">
+            <p class="footer-link"><a href="#">關於我們</a> | <a href="#">服務條款</a> | <a href="#">隱私權說明</a> | <a href="#">商務合作</a></p>
+            <p>金蘋果遊戲平台 版權所有 © 2022 All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <!--/footer-->
+
+    <div class="tabbar">
+        <!--tabbar-->
+        <a href="index.html" class="col active">
+            <img class="icon-off" src="images/tabbar/icon_home_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_home_w.svg" alt="">
+            <p>首頁</p>
+        </a>
+        <a href="game-list.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_game_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_game_w.svg" alt="">
+            <p>遊戲</p>
+        </a>
+        <a href="news-list.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_news_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_news_w.svg" alt="">
+            <p>公告</p>
+        </a>
+        <a href="login.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_deposit_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_deposit_w.svg" alt="">
+            <p>儲值</p>
+        </a>
+        <a href="login.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_mine_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_mine_w.svg" alt="">
+            <p>會員</p>
+        </a>
+    </div>
+    <!--/tabbar-->
+
+    <!--bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggle(id) {
+            $('.open').not($(id)).removeClass('open');
+            $(id).toggleClass('open');
+        }
+    </script>
+
+    <script>
+        /* 提示框 */
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+
+    <!-- owl輪播套件 -->
+    <!-- javascript-for輪播 -->
+    <script src="js/rd/sponsor/jquery.min.js"></script>
+    <script src="js/rd/owl.carousel.min.js"></script>
+    <!-- owl輪播套件 -->
+    <script>
+        $(document).ready(function() {
+            var owl = $('#main-random');
+            owl.owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true,
+                items: 1,
+                animateOut: 'fadeOut'
+            });
+        })
+    </script>
+
+
+    <!-- owl輪播套件/儲值排行 -->
+    <script>
+        $(document).ready(function() {
+            var owl = $('#ranking-random');
+            owl.owlCarousel({
+                loop: true,
+                nav: true,
+                dots: false,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                    },
+                    420: {
+                        items: 2,
+                    },
+                    1000: {
+                        items: 3,
+                    }
+                }
+            });
+            owl.on('mousewheel', '.owl-stage', function(e) {
+                if (e.deltaY > 0) {
+                    owl.trigger('next.owl');
+                } else {
+                    owl.trigger('prev.owl');
+                }
+                e.preventDefault();
+            });
+        })
+    </script>
+
+    <!--日期套件-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/zh-cn.js"></script>
+    <script>
+        $(function() {
+            var sd = new Date(),
+                ed = new Date();
+
+            $('#bDate').datetimepicker({
+                pickTime: false,
+                format: "YYYY/MM/DD",
+                language: 'zh-cn',
+                defaultDate: sd,
+                // minDate: ed,
+            });
+        });
+        
+    </script>
+
+    <!--header fixed-->
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > 46) {
+                    $('body').addClass('header-fixed');
+                } else {
+                    $('body').removeClass('header-fixed');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

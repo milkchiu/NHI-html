@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>金蘋果遊戲平台</title>
+
+    <!--bootstrap
+    <link href="css/bootstrap.css" rel="stylesheet">-->
+
+    <!-- 輪播樣式-Owl Stylesheets -->
+    <link href="css/rd/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/rd/owl.theme.default.min.css" rel="stylesheet">
+
+    <!--style-->
+    <link href="css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="topnav" class="header">
+        <a href="index.html" class="header-logo mr-md-auto"><img src="images/header/logo.svg"></a>
+        <div class="ml-auto">
+            <a class="header_navIcon" onclick="toggle('#navWrap')"><img src="images/header/icon_menu.svg"></a>
+
+            <nav id="navWrap" class="header_nav navWrap">
+                <div class="mask" onclick="toggle('#navWrap')"></div>
+                <div class="cont">
+                    <div class="nav-login-block">
+                        <div class="container justify-content-between">
+                            <div class="d-lg-flex order-2">
+                                <div class="row gx-2">
+                                    <div class="col-6 d-grid">
+                                        <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='login.html';">會員登入</button>
+                                    </div>
+                                    <div class="col-6 d-grid">
+                                        <button type="button" class="btn btn-secondary">玩家註冊</button>
+                                    </div>
+                                </div>
+                                <div class="info-login">
+                                    <h3>陳大天，您好!</h3>
+                                    <p class="info-login-text01">
+                                        <span>ID：</span>
+                                        <span class="info-amount">53627320</span>
+                                    </p>
+                                    <p class="info-login-text02">
+                                        <span>點數：</span>
+                                        <span class="info-amount">2,000</span>
+                                    </p>
+                                    <div class="d-grid col-lg-2">
+                                        <button type="button" class="btn btn-outline-secondary">登出</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lang-block">語言設置：<a href="#" class="tw active">繁</a>/<a href="#" class="cn">简</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-box container">
+                        <ul class="nav justify-content-end">
+                            <!--menu-->
+                            <li class="nav-item active"><a class="nav-link" href="index.html"><span><img src="images/common_icon/icon_navlist.svg"></span>網站首頁</a></li>
+                            <li class="nav-item"><a class="nav-link" href="game-list.html"><span><img src="images/common_icon/icon_navlist.svg"></span>遊戲大廳</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay.html"><span><img src="images/common_icon/icon_navlist.svg"></span>儲值專區</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq.html"><span><img src="images/common_icon/icon_navlist.svg"></span>客服中心</a></li>
+                            <li class="nav-item"><a class="nav-link" href="member.html"><span><img src="images/common_icon/icon_navlist.svg"></span>會員中心</a></li>
+                            <li class="nav-item"><a class="nav-link" href="news-list.html"><span><img src="images/common_icon/icon_navlist.svg"></span>公告列表</a></li>
+                        </ul>
+                    </div>
+                    <!--/menu-->
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="wrap">
+        <div class="section section-style01">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-lg-8 mb-3">
+                        <div class="main-random-block shadow">
+                            <!--大輪播-->
+                            <div id="main-random" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="rd-shading"></div>
+                                    <img src="images/gamePic/gamePic_01.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <div class="rd-shading"></div>
+                                    <img src="images/gamePic/gamePic_02.jpg" alt="">
+                                </div>
+                            </div>
+                            <!--/大輪播-->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="con-block rounded-0 shadow">
+                            <!--最新公告-->
+                            <div class="news-list">
+                                <div class="tabs-style01 bg-danger">
+                                    <div class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="news-type01-tab" data-bs-toggle="pill" data-bs-target="#news-type01" role="tab" aria-controls="news-type01" aria-selected="true">
+                                            <span>最新</span>
+                                        </a>
+                                        <a class="nav-item nav-link" id="news-type02-tab" data-bs-toggle="pill" data-bs-target="#news-type02" role="tab" aria-controls="news-type02" aria-selected="false">
+                                            <span>平台</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-content p-lg-2 p-1" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="news-type01" role="tabpanel" aria-labelledby="news-type01-tab">
+                                        <ul>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge badge-bg1-gradient me-2">平台</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge badge-bg2-gradient me-2">遊戲</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge badge-bg1-gradient me-2">平台</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge badge-bg1-gradient me-2">平台</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge badge-bg2-gradient me-2">遊戲</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="news-type02" role="tabpanel" aria-labelledby="news-type02-tab">
+                                        <ul>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge badge-bg1-gradient me-2">平台</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge badge-bg1-gradient me-2">平台</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge badge-bg1-gradient me-2">平台</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge badge-bg1-gradient me-2">平台</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge badge-bg1-gradient me-2">平台</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="news-type03" role="tabpanel" aria-labelledby="news-type03-tab">
+                                        <ul>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge bg-info me-2">遊戲</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge bg-info me-2">遊戲</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge bg-info me-2">遊戲</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge bg-info me-2">遊戲</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                    <span class="badge bg-info me-2">遊戲</span>
+                                                    <div class="news-list-r">
+                                                        <div class="text-danger fs-14">2017-11-10</div>
+                                                        <div class="text-truncate">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /遊戲公告-->
+                    </div>
+                </div>
+                <h2 class="subtitle-style01 mt-lg-4 mt-2 mb-0 clearfix">
+                    <img src="images/home/subtitle_newgames.svg">
+                    <span>最新遊戲</span><span class="en">/ Latest Games</span>
+                    <div class="col-lg-1 col-2 d-grid float-end">
+                        <button type="button" class="btn btn-sm btn-primary rounded-pill">更多</button>
+                    </div>
+                </h2>
+                <!--最新遊戲-->
+                <div class="row g-3 gy-lg-4 mt-0">
+                    <div class="col-lg-4 col-md-6 pt-3">
+                        <div class="card pd-item shadow px-2">
+                            <div class="row g-0">
+                              <div class="col-md-12 col-4 overflow-hidden rounded-3 mt-n2 mb-md-0 mb-2">
+                                <img src="images/gamePic/gamePic_01.jpg" class="card-img w-100 h-100 o-f-cover" alt="">
+                              </div>
+                              <div class="col-md-12 col-8">
+                                <div class="card-body d-flex align-items-center justify-content-between">
+                                  <h6 class="card-title text-truncate mb-0">開天戰神變態版</h6>
+                                  <button type="button" class="col-lg-3 col-4 btn btn-secondary">官網</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-3">
+                        <div class="card pd-item shadow px-2">
+                            <div class="row g-0">
+                              <div class="col-md-12 col-4 overflow-hidden rounded-3 mt-n2 mb-md-0 mb-2">
+                                <img src="images/gamePic/gamePic_01.jpg" class="card-img w-100 h-100 o-f-cover" alt="">
+                              </div>
+                              <div class="col-md-12 col-8">
+                                <div class="card-body d-flex align-items-center justify-content-between">
+                                  <h6 class="card-title text-truncate mb-0">開天戰神變態版</h6>
+                                  <button type="button" class="col-lg-3 col-4 btn btn-secondary">官網</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-3">
+                        <div class="card pd-item shadow px-2">
+                            <div class="row g-0">
+                              <div class="col-12 overflow-hidden rounded-3 mt-n2 mb-md-0 mb-2">
+                                <img src="images/gamePic/gamePic_01.jpg" class="card-img w-100 h-100 o-f-cover" alt="">
+                              </div>
+                              <div class="col-12">
+                                <div class="card-body d-flex align-items-center justify-content-between">
+                                  <h6 class="card-title text-truncate mb-0">開天戰神變態版</h6>
+                                  <button type="button" class="col-lg-3 col-4 btn btn-secondary">官網</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-3">
+                        <div class="card pd-item shadow px-2">
+                            <div class="row g-0">
+                              <div class="col-md-12 col-4 overflow-hidden rounded-3 mt-n2 mb-md-0 mb-2">
+                                <img src="images/gamePic/gamePic_01.jpg" class="card-img w-100 h-100 o-f-cover" alt="">
+                              </div>
+                              <div class="col-md-12 col-8">
+                                <div class="card-body d-flex align-items-center justify-content-between">
+                                  <h6 class="card-title text-truncate mb-0">開天戰神變態版</h6>
+                                  <button type="button" class="col-lg-3 col-4 btn btn-secondary">官網</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-3">
+                        <div class="card pd-item shadow px-2">
+                            <div class="row g-0">
+                              <div class="col-md-12 col-4 overflow-hidden rounded-3 mt-n2 mb-md-0 mb-2">
+                                <img src="images/gamePic/gamePic_01.jpg" class="card-img w-100 h-100 o-f-cover" alt="">
+                              </div>
+                              <div class="col-md-12 col-8">
+                                <div class="card-body d-flex align-items-center justify-content-between">
+                                  <h6 class="card-title text-truncate mb-0">開天戰神變態版</h6>
+                                  <button type="button" class="col-lg-3 col-4 btn btn-secondary">官網</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-3">
+                        <div class="card pd-item shadow px-2">
+                            <div class="row g-0">
+                              <div class="col-md-12 col-4 overflow-hidden rounded-3 mt-n2 mb-md-0 mb-2">
+                                <img src="images/gamePic/gamePic_01.jpg" class="card-img w-100 h-100 o-f-cover" alt="">
+                              </div>
+                              <div class="col-md-12 col-8">
+                                <div class="card-body d-flex align-items-center justify-content-between">
+                                  <h6 class="card-title text-truncate mb-0">開天戰神變態版</h6>
+                                  <button type="button" class="col-lg-3 col-4 btn btn-secondary">官網</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-3">
+                        <div class="card pd-item shadow px-2">
+                            <div class="row g-0">
+                              <div class="col-md-12 col-4 overflow-hidden rounded-3 mt-n2 mb-md-0 mb-2">
+                                <img src="images/gamePic/gamePic_01.jpg" class="card-img w-100 h-100 o-f-cover" alt="">
+                              </div>
+                              <div class="col-md-12 col-8">
+                                <div class="card-body d-flex align-items-center justify-content-between">
+                                  <h6 class="card-title text-truncate mb-0">開天戰神變態版</h6>
+                                  <button type="button" class="col-lg-3 col-4 btn btn-secondary">官網</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/最新遊戲-->
+            </div>
+        </div>
+        <div class="section section-style02">
+            <div class="container">
+                <div class="ad-block">
+                    <!--AD廣告-->
+                    <div id="ad-random" class="owl-carousel owl-theme">
+                        <div class="item ad-item">
+                            <a href="#" class="ad-img shadow">
+                                <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                                <img src="images/adPic/adPic_01.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item ad-item">
+                            <a href="#" class="ad-img shadow">
+                                <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                                <img src="images/adPic/adPic_02.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item ad-item">
+                            <a href="#" class="ad-img shadow">
+                                <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                                <img src="images/adPic/adPic_03.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item ad-item">
+                            <a href="#" class="ad-img shadow">
+                                <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                                <img src="images/adPic/adPic_04.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item ad-item">
+                            <a href="#" class="ad-img shadow">
+                                <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                                <img src="images/adPic/adPic_05.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--/AD廣告-->
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <!--footer-->
+        <div class="container text-center">
+            <p class="footer-link"><a href="#">關於我們</a> | <a href="#">服務條款</a> | <a href="#">隱私權說明</a> | <a href="#">商務合作</a></p>
+            <p>金蘋果遊戲平台 版權所有 © 2022 All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <!--/footer-->
+
+    <div class="tabbar">
+        <!--tabbar-->
+        <a href="index.html" class="col active">
+            <img class="icon-off" src="images/tabbar/icon_home_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_home_w.svg" alt="">
+            <p>首頁</p>
+        </a>
+        <a href="game-list.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_game_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_game_w.svg" alt="">
+            <p>遊戲</p>
+        </a>
+        <a href="news-list.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_news_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_news_w.svg" alt="">
+            <p>公告</p>
+        </a>
+        <a href="login.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_register_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_register_w.svg" alt="">
+            <p>註冊</p>
+        </a>
+        <a href="login.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_login_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_login_w.svg" alt="">
+            <p>登入</p>
+        </a>
+    </div>
+    <!--/tabbar-->
+
+    <!--bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggle(id) {
+            $('.open').not($(id)).removeClass('open');
+            $(id).toggleClass('open');
+        }
+    </script>
+
+    <script>
+        /* 提示框 */
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+
+    <!-- owl輪播套件 -->
+    <!-- javascript-for輪播 -->
+    <script src="js/rd/sponsor/jquery.min.js"></script>
+    <script src="js/rd/owl.carousel.min.js"></script>
+    <!-- owl輪播套件 -->
+    <script>
+        $(document).ready(function() {
+            var owl = $('#main-random');
+            owl.owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true,
+                items: 1,
+                animateOut: 'fadeOut'
+            });
+        })
+    </script>
+
+
+    <!-- owl輪播套件/AD廣告 -->
+    <script>
+        $(document).ready(function() {
+            var owl = $('#ad-random');
+            owl.owlCarousel({
+                loop: true,
+                nav: false,
+                dots: false,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                    },
+                    420: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 4,
+                    }
+                }
+            });
+            owl.on('mousewheel', '.owl-stage', function(e) {
+                if (e.deltaY > 0) {
+                    owl.trigger('next.owl');
+                } else {
+                    owl.trigger('prev.owl');
+                }
+                e.preventDefault();
+            });
+        })
+    </script>
+
+    <!--header fixed-->
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > 46) {
+                    $('body').addClass('header-fixed');
+                } else {
+                    $('body').removeClass('header-fixed');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

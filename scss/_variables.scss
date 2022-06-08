@@ -1,0 +1,134 @@
+//Customize bootstrap V5.1.x
+//color
+$white: #FFFFFF;
+$gray-100: #F5F5F5;
+$gray-200: #EEEEEE;
+$gray-300: #DDDDDD;
+$gray-400: #999999;
+$gray-500: #888888;
+$gray-600: #666666;
+$gray-800: #333333;
+$black: #000000;
+
+$blue: #429FDE;
+$red: #D22A1F;
+$orange: #FF5E00;
+$yellow: #FFE18F;
+$cyan: #309AC1;
+
+$primary:   $red;
+$secondary: $yellow;
+$info: $cyan;
+$warning: $orange;
+$danger: $red;
+$light: $gray-100;
+$dark:  $gray-800;
+
+//my color-btn
+$bg-primary-gradient: linear-gradient(135deg, #f95147 0%,#ee2757 100%);
+$bg-secondary-gradient: linear-gradient(135deg, #fff58a 0%,#fbae1b 100%);
+$bg-primary-gradient-hover: linear-gradient(135deg, #E63126 0%,#D21643 100%);
+$bg-secondary-gradient-hover: linear-gradient(135deg, #FFEF41 0%,#F38A00 100%);
+//my color-badge
+$badge-bg1-gradient: linear-gradient(135deg, #ab65c4 1%, #e35e94 100%);
+$badge-bg2-gradient: linear-gradient(135deg, #0e8fd2 0%, #3dd0e1 100%);
+//my color-table
+$table-headBg: #D5618C;
+$table-headColor: $white;
+
+// Options
+$enable-negative-margins: true; //開啟負margin ex:.mt-n1
+
+//spacer
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25, //4px
+  2: $spacer * .5, //8px
+  3: $spacer, //16px
+  4: $spacer * 1.5, //24px
+  5: $spacer * 2, //32px
+  6: $spacer * 2.5, //60px
+  7: $spacer * 3, //48px
+  8: $spacer * 3.5, //56px
+  9: $spacer * 4, //64px
+  10: $spacer * 5 //80px
+);
+
+//body
+$body-bg: #FFF9E6;
+$body-color: $dark;
+
+//link
+$link-color:$blue;
+$link-decoration: none;
+
+//border
+$border-radius: 6px;
+$border-radius-sm: 4px;
+$border-radius-lg: 10px;
+
+//shadow
+$box-shadow: 0 .5rem .5rem rgba($black, .10);
+
+//font
+$font-family-base: 'Heebo', sans-serif;
+
+$font-size-base:              1rem; //16
+$h1-font-size:                $font-size-base * 2.5; //40
+$h2-font-size:                $font-size-base * 2; //32
+$h3-font-size:                $font-size-base * 1.75; //28
+$h4-font-size:                $font-size-base * 1.5; //24
+$h5-font-size:                $font-size-base * 1.25; //20
+$h6-font-size:                $font-size-base; //16
+
+$font-sizes: (
+  14: $font-size-base * .875,
+  16: $font-size-base,
+  18: $font-size-base * .125,
+  20: $font-size-base * 1.25,
+  24: $font-size-base * 1.5,
+  28: $font-size-base * 1.75,
+  32: $font-size-base * 2,
+  36: $font-size-base * 2.25,
+  40: $font-size-base * 2.5
+);
+
+//form
+$input-bg: $white;
+$input-border-color: $gray-300;
+//$input-box-shadow: none;
+$input-focus-border-color: $primary;
+$form-check-input-width:  1.25em;
+//$form-select-box-shadow: none;
+
+//card
+$card-spacer-y: $spacer * .5;
+$card-spacer-x: $spacer * .5;
+$card-border-width: 0;
+$card-border-radius: 10px;
+$card-box-shadow: $box-shadow;
+
+//table
+$table-striped-bg: $gray-100;
+$table-hover-bg: $gray-200;
+
+//alert
+$alert-border-radius: 0;
+
+//badges
+$badge-font-size: .875em;
+$badge-padding-y: .5em;
+$badge-padding-x: .75em;
+$badge-border-radius: 0;
+
+// Pagination
+$pagination-padding-y:  .5rem;
+$pagination-padding-x: 1rem;
+$pagination-color: $gray-500;
+$pagination-bg: $white;
+$pagination-border-color: $gray-300;
+$pagination-hover-color: $danger;
+$pagination-hover-bg: lighten($danger,50%);
+$pagination-active-color: $white;
+$pagination-active-bg: $danger;

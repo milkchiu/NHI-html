@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="1.105" x2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ee2757"/>
+      <stop offset="1" stop-color="#f95147"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="矩形_4085" data-name="矩形 4085" width="24" height="24" transform="translate(24 937)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="icon_mine_r" transform="translate(-24 -937)" clip-path="url(#clip-path)">
+    <g id="user_1_" data-name="user (1)" transform="translate(27.885 939.2)">
+      <path id="XMLID_472_" d="M80,4.373A4.373,4.373,0,1,0,84.372,0,4.378,4.378,0,0,0,80,4.373Z" transform="translate(-76.358)" fill="url(#linear-gradient)"/>
+      <path id="XMLID_473_" d="M28.8,164.559H42.732a1.045,1.045,0,0,0,1.045-1.045,8.014,8.014,0,0,0-16.028,0A1.045,1.045,0,0,0,28.8,164.559Z" transform="translate(-27.75 -144.664)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

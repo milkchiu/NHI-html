@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_3779" data-name="矩形 3779" width="24" height="24" transform="translate(26 939)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1" y1="1.105" x2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ee2757"/>
+      <stop offset="1" stop-color="#f95147"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_login_r" transform="translate(-26 -939)" clip-path="url(#clip-path)">
+    <g id="user-login-button" transform="translate(26.032 897.392)">
+      <g id="组_16977" data-name="组 16977" transform="translate(-0.032 44.251)">
+        <path id="路径_32542" data-name="路径 32542" d="M1.006,179.318a1.006,1.006,0,1,0,0,2.011H5.24v-2.011Z" transform="translate(0.032 -171.322)" fill="url(#linear-gradient)"/>
+        <path id="路径_32543" data-name="路径 32543" d="M103.726,44.252H91.969a3.424,3.424,0,0,0-3.486,3.35v4.645H97.9L95.887,50.31a.98.98,0,0,1,0-1.422,1.076,1.076,0,0,1,1.479,0l3.8,3.653a1,1,0,0,1,.225.322.983.983,0,0,1,.082.389.961.961,0,0,1-.078.379,1.021,1.021,0,0,1-.226.33l-3.8,3.655a1.078,1.078,0,0,1-1.479,0,.981.981,0,0,1,0-1.422L97.9,54.257H88.483V58.9a3.424,3.424,0,0,0,3.486,3.349h11.757a3.423,3.423,0,0,0,3.485-3.349V47.6A3.423,3.423,0,0,0,103.726,44.252Z" transform="translate(-83.211 -44.251)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

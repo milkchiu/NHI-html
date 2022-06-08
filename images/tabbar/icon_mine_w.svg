@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_4083" data-name="矩形 4083" width="24" height="24" transform="translate(24 937)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="icon_mine_w" transform="translate(-24 -937)" clip-path="url(#clip-path)">
+    <g id="user_1_" data-name="user (1)" transform="translate(27.885 939.2)">
+      <path id="XMLID_472_" d="M80,4.373A4.373,4.373,0,1,0,84.372,0,4.378,4.378,0,0,0,80,4.373Z" transform="translate(-76.358)" fill="#fff"/>
+      <path id="XMLID_473_" d="M28.8,164.559H42.732a1.045,1.045,0,0,0,1.045-1.045,8.014,8.014,0,0,0-16.028,0A1.045,1.045,0,0,0,28.8,164.559Z" transform="translate(-27.75 -144.664)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

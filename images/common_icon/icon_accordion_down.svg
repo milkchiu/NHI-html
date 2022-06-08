@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="20" viewBox="0 0 36 20">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="1.105" x2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ee2757"/>
+      <stop offset="1" stop-color="#f95147"/>
+    </linearGradient>
+  </defs>
+  <g id="back" transform="translate(-0.001 74.113) rotate(-90)">
+    <path id="Chevron_Right" d="M54.644,19.286,70.979,35.47a1.852,1.852,0,0,0,2.6,0,1.8,1.8,0,0,0,0-2.568L58.536,18,73.574,3.1a1.8,1.8,0,0,0,0-2.57,1.852,1.852,0,0,0-2.6,0L54.642,16.716A1.823,1.823,0,0,0,54.644,19.286Z" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

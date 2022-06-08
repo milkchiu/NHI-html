@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="16" viewBox="0 0 15 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_4092" data-name="矩形 4092" width="15" height="16" transform="translate(-2834 4922)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fffac2"/>
+      <stop offset="1" stop-color="#ffc75b"/>
+    </linearGradient>
+  </defs>
+  <g id="icon_nvavlist" transform="translate(2834 -4922)" clip-path="url(#clip-path)">
+    <path id="icon_arrow_r01" d="M5,0l5,8H0Z" transform="translate(-2822 4925) rotate(90)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

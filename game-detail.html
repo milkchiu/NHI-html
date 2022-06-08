@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>金蘋果遊戲平台</title>
+
+    <!--bootstrap
+    <link href="css/bootstrap.css" rel="stylesheet">-->
+
+    <!-- 輪播樣式-Owl Stylesheets -->
+    <link href="css/rd/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/rd/owl.theme.default.min.css" rel="stylesheet">
+
+    <!--style-->
+    <link href="css/all.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header id="topnav" class="header">
+        <a href="index.html" class="header-logo mr-md-auto"><img src="images/header/logo.svg"></a>
+        <div class="ml-auto">
+            <a class="header_navIcon" onclick="toggle('#navWrap')"><img src="images/header/icon_menu.svg"></a>
+
+            <nav id="navWrap" class="header_nav navWrap">
+                <div class="mask" onclick="toggle('#navWrap')"></div>
+                <div class="cont">
+                    <div class="nav-login-block">
+                        <div class="container justify-content-between">
+                            <div class="d-lg-flex order-2">
+                                <div class="row gx-2">
+                                    <div class="col-6 d-grid">
+                                        <button type="button" class="btn btn-outline-warning" onclick="window.location.href='login.html';">會員登入</button>
+                                    </div>
+                                    <div class="col-6 d-grid">
+                                        <button type="button" class="btn btn-warning">玩家註冊</button>
+                                    </div>
+                                </div>
+                                <div class="info-login">
+                                    <h3>陳大天，您好!</h3>
+                                    <p class="info-login-text01">
+                                        <span>ID：</span>
+                                        <span class="info-amount">53627320</span>
+                                    </p>
+                                    <p class="info-login-text02">
+                                        <span>點數：</span>
+                                        <span class="info-amount">2,000</span>
+                                    </p>
+                                    <div class="d-grid col-lg-2">
+                                        <button type="button" class="btn btn-outline-warning">登出</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lang-block">語言設置：<a href="#" class="tw active">繁</a>/<a href="#" class="cn">简</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-box container">
+                        <ul class="nav justify-content-end">
+                            <!--menu-->
+                            <li class="nav-item"><a class="nav-link" href="index.html"><span><img src="images/common_icon/icon_navlist.svg"></span>網站首頁</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="game-list.html"><span><img src="images/common_icon/icon_navlist.svg"></span>遊戲大廳</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay.html"><span><img src="images/common_icon/icon_navlist.svg"></span>儲值專區</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq.html"><span><img src="images/common_icon/icon_navlist.svg"></span>客服中心</a></li>
+                            <li class="nav-item"><a class="nav-link" href="member.html"><span><img src="images/common_icon/icon_navlist.svg"></span>會員中心</a></li>
+                            <li class="nav-item"><a class="nav-link" href="news-list.html"><span><img src="images/common_icon/icon_navlist.svg"></span>公告列表</a></li>
+                        </ul>
+                    </div>
+                    <!--/menu-->
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="wrap">
+        <div class="section section-style01">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-lg-11 col-12 mx-auto">
+                        <div class="gameDetail-pic shadow mb-lg-4 mb-3">
+                            <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                            <img class="game-img" src="images/gamePic/gamePic_01.jpg" alt="">
+                            <div class="game-text text-white p-3">
+                                <p class="text-truncate2 mb-0">《攻城三國之戰無不勝》是一款以三國亂世為背景的戰爭策略類H5遊戲，遊戲特有的戰中策略模式，摒棄了純數據比拼，讓戰鬥變得更加刺激有趣。玩家可以在遊 戲中收集諸多三國名將進行培養，並率領麾下大軍參與國戰，攻城略地，在亂世中建立屬於自己的勢力並率領麾下大軍參與國戰，攻城略地，在亂世中建立屬於自己的勢力。</p>
+                            </div>
+                        </div>
+                        <div class="con-block shadow">
+                                <div class="tabs-style01">
+                                    <div class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="game-type01-tab" data-bs-toggle="pill" data-bs-target="#game-type01" role="tab" aria-controls="news-type01" aria-selected="true">
+                                            <span>開服列表</span>
+                                        </a>
+                                        <a class="nav-item nav-link" id="game-type02-tab" data-bs-toggle="pill" data-bs-target="#game-type02" role="tab" aria-controls="news-type02" aria-selected="false">
+                                            <span>遊戲公告</span>
+                                        </a>
+                                        <a class="nav-item nav-link" id="game-type03-tab" data-bs-toggle="pill" data-bs-target="#game-type03" role="tab" aria-controls="news-type03" aria-selected="false">
+                                            <span>虛寶領取</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-content p-lg-4 px-2 py-3" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="game-type01" role="tabpanel" aria-labelledby="game-type01-tab">
+                                        <div class="server-block row g-lg-3 g-2">
+                                            <div class="col-lg-2 col-4 d-grid">
+                                                <button class="btn btn-secondary">S9 172區</button>
+                                            </div>
+                                            <div class="col-lg-2 col-4 d-grid">
+                                                <button class="btn btn-secondary">S9 172區</button>
+                                            </div>
+                                            <div class="col-lg-2 col-4 d-grid">
+                                                <button class="btn btn-secondary">S9 172區</button>
+                                            </div>
+                                            <div class="col-lg-2 col-4 d-grid">
+                                                <button class="btn btn-secondary">S9 172區</button>
+                                            </div>
+                                            <div class="col-lg-2 col-4 d-grid">
+                                                <button class="btn btn-secondary">S9 172區</button>
+                                            </div>
+                                            <div class="col-lg-2 col-4 d-grid">
+                                                <button class="btn btn-secondary">S9 172區</button>
+                                            </div>
+                                            <div class="col-lg-2 col-4 d-grid">
+                                                <button class="btn btn-secondary">S9 172區</button>
+                                            </div>
+                                            <div class="col-lg-2 col-4 d-grid">
+                                                <button class="btn btn-secondary">S9 172區</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="game-type02" role="tabpanel" aria-labelledby="game-type02-tab">
+                                        <div class="news-list mb-3">
+                                            <ul>
+                                                <li>
+                                                    <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                        <span class="badge bg-danger me-2">平台</span>
+                                                        <div class="news-list-r">
+                                                            <div class="news-list-date float-end ms-1">2017-11-10</div>
+                                                            <div class="news-list-title">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                        <span class="badge bg-info me-2">遊戲</span>
+                                                        <div class="news-list-r">
+                                                            <div class="news-list-date float-end ms-1">2017-11-10</div>
+                                                            <div class="news-list-title">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                        <span class="badge bg-info me-2">遊戲</span>
+                                                        <div class="news-list-r">
+                                                            <div class="news-list-date float-end ms-1">2017-11-10</div>
+                                                            <div class="news-list-title">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                        <span class="badge bg-info me-2">遊戲</span>
+                                                        <div class="news-list-r">
+                                                            <div class="news-list-date float-end ms-1">2017-11-10</div>
+                                                            <div class="news-list-title">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="news-infor.html" class="news-list-item d-flex align-items-center">
+                                                        <span class="badge bg-info me-2">遊戲</span>
+                                                        <div class="news-list-r">
+                                                            <div class="news-list-date float-end ms-1">2017-11-10</div>
+                                                            <div class="news-list-title">【開天戰神變態版】10/24 版本 導致無法登入問題</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <nav aria-label="...">
+                                                <ul class="pagination">
+                                                  <li class="page-item disabled">
+                                                    <a class="page-link">«</a>
+                                                  </li>
+                                                  <li class="page-item active" aria-current="page">
+                                                      <a class="page-link" href="#">1</a>
+                                                    </li>
+                                                  <li class="page-item">
+                                                    <a class="page-link" href="#">2</a>
+                                                  </li>
+                                                  <li class="page-item">
+                                                      <a class="page-link" href="#">3</a>
+                                                    </li>
+                                                  <li class="page-item">
+                                                    <a class="page-link" href="#">»</a>
+                                                  </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="game-type03" role="tabpanel" aria-labelledby="game-type03-tab">
+                                        <div class="con-table">
+                                            <div class="table-responsive-sm0">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">虛寶名稱</th>
+                                                            <th scope="col">虛寶內容</th>
+                                                            <th scope="col">領取</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>新手禮包<span class="text-danger">【無限期】</span></td>
+                                                            <td>銅錢3萬，糧草3萬，拜帖*5</td>
+                                                            <td><button class="col-lg-4 col-8 btn btn-sm btn-outline-danger rounded-pill">領取</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>新手禮包</td>
+                                                            <td>銅錢3萬，糧草3萬，拜帖*5</td>
+                                                            <td><button class="col-lg-4 col-8 btn btn-sm btn-outline-danger rounded-pill">領取</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>新手禮包</td>
+                                                            <td>銅錢3萬，糧草3萬，拜帖*5</td>
+                                                            <td><button class="col-lg-4 col-8 btn btn-sm btn-outline-danger rounded-pill">領取</button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-style02">
+            <div class="container">
+                <div class="ad-block">
+                    <!--AD廣告-->
+                    <div id="ad-random" class="owl-carousel owl-theme">
+                        <div class="item ad-item">
+                            <a href="#" class="ad-img shadow">
+                                <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                                <img src="images/adPic/adPic_01.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item ad-item">
+                            <a href="#" class="ad-img shadow">
+                                <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                                <img src="images/adPic/adPic_02.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item ad-item">
+                            <a href="#" class="ad-img shadow">
+                                <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                                <img src="images/adPic/adPic_03.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item ad-item">
+                            <a href="#" class="ad-img shadow">
+                                <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                                <img src="images/adPic/adPic_04.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item ad-item">
+                            <a href="#" class="ad-img shadow">
+                                <img class="gameList-tagAge" src="images/game_rating15.jpg" alt="輔導級">
+                                <img src="images/adPic/adPic_05.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--/AD廣告-->
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <!--footer-->
+        <div class="container text-center">
+            <p class="footer-link"><a href="#">關於我們</a> | <a href="#">服務條款</a> | <a href="#">隱私權說明</a> | <a href="#">商務合作</a></p>
+            <p>金蘋果遊戲平台 版權所有 © 2022 All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <!--/footer-->
+
+    <div class="tabbar">
+        <!--tabbar-->
+        <a href="index.html" class="col active">
+            <img class="icon-off" src="images/tabbar/icon_home_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_home_w.svg" alt="">
+            <p>首頁</p>
+        </a>
+        <a href="game-list.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_game_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_game_w.svg" alt="">
+            <p>遊戲</p>
+        </a>
+        <a href="news-list.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_news_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_news_w.svg" alt="">
+            <p>公告</p>
+        </a>
+        <a href="login.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_register_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_register_w.svg" alt="">
+            <p>註冊</p>
+        </a>
+        <a href="login.html" class="col">
+            <img class="icon-off" src="images/tabbar/icon_login_r.svg" alt="">
+            <img class="icon-on" src="images/tabbar/icon_login_w.svg" alt="">
+            <p>登入</p>
+        </a>
+    </div>
+    <!--/tabbar-->
+
+    <!--bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggle(id) {
+            $('.open').not($(id)).removeClass('open');
+            $(id).toggleClass('open');
+        }
+    </script>
+
+    <script>
+        /* 提示框 */
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+
+    <!-- owl輪播套件 -->
+    <!-- javascript-for輪播 -->
+    <script src="js/rd/sponsor/jquery.min.js"></script>
+    <script src="js/rd/owl.carousel.min.js"></script>
+    <!-- owl輪播套件 -->
+    <script>
+        $(document).ready(function() {
+            var owl = $('#main-random');
+            owl.owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true,
+                items: 1,
+                animateOut: 'fadeOut'
+            });
+        })
+    </script>
+
+
+    <!-- owl輪播套件/AD廣告 -->
+    <script>
+        $(document).ready(function() {
+            var owl = $('#ad-random');
+            owl.owlCarousel({
+                loop: true,
+                nav: false,
+                dots: false,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                    },
+                    420: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 4,
+                    }
+                }
+            });
+            owl.on('mousewheel', '.owl-stage', function(e) {
+                if (e.deltaY > 0) {
+                    owl.trigger('next.owl');
+                } else {
+                    owl.trigger('prev.owl');
+                }
+                e.preventDefault();
+            });
+        })
+    </script>
+
+    <!--header fixed-->
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > 46) {
+                    $('body').addClass('header-fixed');
+                } else {
+                    $('body').removeClass('header-fixed');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

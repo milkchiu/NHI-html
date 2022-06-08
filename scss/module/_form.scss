@@ -1,0 +1,46 @@
+//check
+.btn-check {
+    + .btn {
+        position: relative;
+    }
+    + .btn-radio {
+        background: $gray-100;
+        border-color: $gray-200;
+        &:hover {
+            background: $white;
+            border-color: $primary;
+        }
+    }
+    + .radio-imgPos {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &:checked {
+        + .btn-radio {
+            background-color: $white;
+            border-color: $primary;
+            &::after {
+                content: "";
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                background: url(../images/common_icon/img_check.svg);
+                background-size: contain;
+                right: 0px;
+                bottom: 0px;
+            }
+        }
+    }
+    &:focus {
+        + .btn {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}
