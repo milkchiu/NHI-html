@@ -114,18 +114,12 @@
         button.owl-next,button.owl-prev {
             width: 30px;
             line-height: 70px;
-            background: #cda035;
-            background: -moz-linear-gradient(left, #cda035 0%, #b57e10 10%, #f9df7b 31%, #fff3a6 51%, #f9df7b 68%, #b57e10 90%, #cda035 100%);
-            background: -webkit-linear-gradient(left, #cda035 0%, #b57e10 10%, #f9df7b 31%, #fff3a6 51%, #f9df7b 68%, #b57e10 90%, #cda035 100%);
             background: linear-gradient(to right, #cda035 0%, #b57e10 10%, #f9df7b 31%, #fff3a6 51%, #f9df7b 68%, #b57e10 90%, #cda035 100%);
             color: #3B2A07;
             padding: 0!important;
             border-radius: 4px;
             font-size: 1.25rem;
             &:hover {
-                background: #cda035;
-                background: -moz-linear-gradient(left, #cda035 0%, #f9df7b 31%, #fff3a6 51%, #f9df7b 68%, #cda035 100%);
-                background: -webkit-linear-gradient(left, #cda035 0%, #f9df7b 31%, #fff3a6 51%, #f9df7b 68%, #cda035 100%);
                 background: linear-gradient(to right, #cda035 0%, #f9df7b 31%, #fff3a6 51%, #f9df7b 68%, #cda035 100%);
                 color: #3B2A07;
             }

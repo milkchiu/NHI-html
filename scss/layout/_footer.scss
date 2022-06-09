@@ -1,83 +1,68 @@
-/* footer */
-
+//footer
 .footer {
-    background: #666666;
+    background: $gray-600;
     padding: 1.25rem;
-}
-
-.footer .footer-link a {
-    padding: 0 0.25rem;
-}
-
-.footer p {
-    font-size: 0.875rem;
-    color: #ffffff;
-    margin: 0.25rem 0;
-}
-
-@include media-breakpoint-down(md) {
-    .footer {
+    .footer-link {
+        a {
+            padding: 0 .25rem;
+        }
+    }
+    p {
+        font-size: .875rem;
+        color: #ffffff;
+        margin: .25rem 0;
+    }
+    @include media-breakpoint-down(md) {
         display: none;
     }
 }
 
-/* tabbar */
-
+//tabbar
 .tabbar {
-    display: none;
-}
-
-@include media-breakpoint-down(md) {
-    .tabbar {
-        width: 100%;
-        height: 60px;
-        position: fixed;
-        background: #ffffff; /* Old browsers */
-        background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        border-top: 2px solid #f95147;
-        display: flex;
-        left: 0px;
-        bottom: 0px;
-        z-index: 3;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    border-top: 2px solid #f95147;
+    display: flex;
+    left: 0px;
+    bottom: 0px;
+    z-index: 3;
+    @include media-breakpoint-up(md) {
+        display: none;
     }
-    .tabbar a {
+    a {
         width: 100%;
         height: auto;
         position: relative;
-        font-size: 0.75rem;
+        font-size: .75rem;
         font-weight: bold;
         text-align: center;
-        color: #DF1C2C;
+        color: $primary;
         text-decoration: none;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        &:hover,&.active {
+            background: linear-gradient(135deg, #f95147 1%,#ee2757 100%);
+            color: #ffffff;
+            img.icon-on {
+                display: block;
+            }
+            img.icon-off {
+                display: none;
+            }
+        }
+        img.icon-on {
+            display: none;
+        }
     }
-    .tabbar a:hover,
-    .tabbar a.active {
-        background: #f95147;
-        background: -moz-linear-gradient(-45deg, #f95147 1%, #ee2757 100%);
-        background: -webkit-linear-gradient(-45deg, #f95147 1%,#ee2757 100%);
-        background: linear-gradient(135deg, #f95147 1%,#ee2757 100%);
-        color: #ffffff;
-    }
-    .tabbar a:hover img.icon-on,
-    .tabbar a.active img.icon-on {
-        display: block;
-    }
-    .tabbar a img.icon-on,
-    .tabbar a:hover img.icon-off,
-    .tabbar a.active img.icon-off {
-        display: none;
-    }
-    .tabbar img {
+    img {
         width: 24px;
-        margin: 0 auto 2px auto;
+        margin: 0 auto .125rem auto;
     }
-    .tabbar p {
+    p {
         margin: 0;
     }
 }

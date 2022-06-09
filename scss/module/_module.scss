@@ -84,7 +84,7 @@
         @extend .fs-20;
         color: $gray-500;
         font-weight: 500;
-        margin-left: 5px;
+        margin-left: $spacer*.25;
         @include media-breakpoint-down(md) {
             display: none;
         }
@@ -101,7 +101,7 @@
     color: $primary;
     font-weight: bold;
     border-left: 4px solid $primary;
-    padding-left: .5rem;
+    padding-left: $spacer * .5;
 }
 
 //product
@@ -140,46 +140,34 @@
 
 //popup彈窗
 .popup-style {
-    color: #ffffff;
-}
-
-.popup-style .modal-content {
-    background: #EBEEF7;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.popup-style .modal-header {
-    background: #5aa6ff;
-    background: -moz-linear-gradient(top, #5aa6ff 0%, #466cf5 100%);
-    background: -webkit-linear-gradient(top, #5aa6ff 0%, #466cf5 100%);
-    background: linear-gradient(to bottom, #5aa6ff 0%, #466cf5 100%);
-    border-bottom: 0;
-    padding: .75rem 1rem;
-}
-
-.popup-style .modal-header h5 {
-    font-size: 18px;
-}
-
-.popup-style .modal-body {
-    font-size: 1rem;
-    padding: 0;
-}
-
-.popup-style .modal-sm .modal-body {
-    padding: 1.875 1.25rem;
-}
-
-.modal-header .close {
-    color: #ffffff;
-    opacity: 1;
-}
-
-@include media-breakpoint-down(md) {
-    .popup-style .modal-header h5 {
-        font-size: 1rem;
+    color: $white;
+    .modal-header {
+        background: linear-gradient(to bottom, #5aa6ff 0%, #466cf5 100%);
+        border-bottom: 0;
+        padding: .75rem 1rem;
+        h5 {
+            font-size: 18px;
+        }
+        .close {
+            color: #ffffff;
+            opacity: 1;
+        }
     }
+    .modal-body {
+        font-size: 1rem;
+        padding: 0;
+    }
+    .modal-sm {
+        .modal-body {
+            padding: 1.875 1.25rem;
+        }
+    }
+    .modal-content {
+        background: #EBEEF7;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
 }
 
 //nav.tabs
@@ -195,7 +183,6 @@
         .nav-link.active,
         .show > .nav-link {
             color: $danger;
-            //@include gradient-bg($nav-pills-link-active-bg);
             background: $white;
             &:after {
                 content: "";
