@@ -31,6 +31,16 @@ body.header-fixed {
             }
         }
     }
+    .header_nav {
+        .nav-link {
+            @media (min-width: 1200px) {
+                padding: 0.875em 1.25rem;
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 //header資訊
@@ -120,6 +130,9 @@ body.header-fixed {
     display: block;
     padding: 0.5rem 0;
     right: 15px;
+    @media (min-width: 1200px) {
+        display: none;
+    }
 }
 .header_nav {
     @media (max-width: 1199.98px) {
@@ -153,6 +166,16 @@ body.header-fixed {
                 vertical-align: text-top;
             }
         }
+        @media (min-width: 1200px) {
+            position: relative;
+            color: #ffffff;
+            padding: 1.5em 1.25rem;
+            transition: 0.7s all;
+            &:hover {
+                color: #FFE18F;
+                text-decoration: none;
+            }
+        }
         .fas,.far {
             min-width: 1em;
             text-align: center;
@@ -184,6 +207,34 @@ body.header-fixed {
     .nav-item {
         @media (max-width: 1199.98px) {
             padding-top: 0.3em;
+        }
+        &.active,&:hover {
+            @media (min-width: 1200px) {
+                background: rgba(0,0,0,0.2);
+                >a {
+                    color: #FFE18F;
+                    font-weight: bold;
+                }
+                > a:after {
+                    background-color: #FFE18F;
+                    width: 100%;
+                }
+            }
+        }
+        > a:after {
+            @media (min-width: 1200px) {
+                content: '';
+                height: 4px;
+                background-color: transparent;
+                position: absolute;
+                width: 30%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0 auto;
+                transition: width ease .3s;
+                pointer-events: none;
+            }
         }
     }
     &.open {
@@ -239,59 +290,7 @@ body.header-fixed {
             transition: 0.7s all;
         }
     }
-}
-
-@media (min-width: 1200px) {
-    /*header menu*/
-    .header_nav .nav-link {
-        position: relative;
-        color: #ffffff;
-        padding: 1.5em 1.25rem;
-        transition: 0.7s all;
-    }
-    body.header-fixed .header_nav .nav-link {
-        padding: 0.875em 1.25rem;
-    }
-    .header_nav .nav-link:hover {
-        color: #FFE18F;
-        text-decoration: none;
-    }
-    .header_nav .nav-item.active>a:after,
-    .header_nav .nav-item:hover>a:after {
-        background-color: #FFE18F;
-        width: 100%;
-    }
-    .header_nav .nav-item>a:after {
-        content: '';
-        height: 4px;
-        background-color: transparent;
-        position: absolute;
-        width: 30%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: 0 auto;
-        transition: width ease .3s;
-        pointer-events: none;
-    }
-    .header_nav .nav-item.active,
-    .header_nav .nav-item:hover {
-        background: rgba(0,0,0,0.2);
-    }
-    .header_nav .nav-item.active>a,
-    .header_nav .nav-item:hover>a {
-        color: #FFE18F;
-        font-weight: bold;
-    }
-    .header_nav .nav-link span {
-        display: none;
-    }
-    .header_navIcon {
-        display: none;
-    }
-}
-@media (min-width: 1400px) {
-    .header-logo {
+    @media (min-width: 1400px) {
         margin-left: -635px;
     }
 }
